@@ -1,0 +1,32 @@
+{
+  "name": "fg-rewards-automation",
+  "version": "1.0.0",
+  "description": "FG Token Rewards Automation",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "compile": "npx hardhat compile",
+    "deploy": "node deploy.js",
+    "fund": "node fund-contract.js",
+    "gelato": "node create-gelato-automation.js",
+    "test": "node test-contract.js",
+    "deploy:hardhat": "npx hardhat run scripts/deploy.js --network base"
+  },
+  "dependencies": {
+    "@gelatonetwork/automate-sdk": "^3.1.0",
+    "dotenv": "^17.2.2",
+    "ethers": "^6.15.0"
+  },
+  "keywords": [
+    "gelato",
+    "automation",
+    "defi",
+    "rewards",
+    "fg-token"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0"
+  }
+}
